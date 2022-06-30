@@ -289,7 +289,7 @@ function testElse(val)
 }
 testElse(4);
 
-//Else if
+//Else if - Logical Order is important
 function testElseIf(val)
 {
   if (val > 10)
@@ -306,3 +306,86 @@ function testElseIf(val)
   }
 }
 testElseIf(7);
+
+//Chaining If Else statements
+function testSize(num)
+{
+  if (num < 5)
+  {
+    return "Tiny";
+  }
+  else if (num < 10)
+  {
+    return "Small";
+  }
+  else if (num < 15)
+  {
+    return "Medium";
+  }
+  else if (num < 20)
+  {
+    return "Large";
+  }
+  else return "Huge";
+}
+testSize(7);
+
+//Switch statements
+function caseInSwitch(val)
+{
+  let answer = "";
+  switch (val)
+  {
+    case 1:
+      answer = "alpha";
+      break;
+    case 2:
+      answer = "beta";;
+      break;
+    case 3:
+      answer = "gamma";;
+      break;
+    case 4:
+      answer = "delta";
+      break;
+    default:
+      answer = "try again";
+  }
+  return answer;
+}
+caseInSwitch(1);
+
+//Multiple Identical Options in Switch Statement
+function sequentialSizes(val)
+{
+  let answer = "";
+  switch (val)
+  {
+    case 1:
+    case 2:
+    case 3:
+      answer = "Low";
+      break;
+    case 4:
+      answer = "Low Mid";
+      break;
+    case 5:
+    case 6:
+      answer = "Mid";;
+      break;
+    case 7:
+    case 8:
+    case 9:
+      answer = "High";;
+      break;
+  }
+  return answer;
+}
+sequentialSizes(1);
+
+// Returning Boolean values from functions
+function isLess(a, b)
+{
+  return (a < b)
+}
+isLess(10, 15);
