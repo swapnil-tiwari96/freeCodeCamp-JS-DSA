@@ -389,3 +389,178 @@ function isLess(a, b)
   return (a < b)
 }
 isLess(10, 15);
+
+//Objects - similar to arrays, but instead of using indexes to access them, we access them through Properties
+const myDog = {
+  name: "Mimi",
+  legs: 4,
+  tails: 1,
+  friends: ["Ash", "Chow", "Bella"]
+};
+
+//Accessing Object Properties - You can access them throw 2 ways - (.)Dot Notation and ([]) Square Bracket Notation
+
+//.Dot Notation
+const testObj = {
+  "hat": "ballcap",
+  "shirt": "jersey",
+  "shoes": "cleats"
+};
+const hatValue = testObj.hat;
+const shirtValue = testObj.shirt;
+
+//[] Bracket Notation
+const testObj1 = {
+  "an entree": "hamburger",
+  "my side": "veggies",
+  "the drink": "water"
+};
+const entreeValue = testObj1["an entree"];
+const drinkValue = testObj1["the drink"];
+
+//[] Bracket Notation
+const testObj2 = {
+  12: "Namath",
+  16: "Montana",
+  19: "Unitas"
+}
+const playerNumber = 16;
+const player = testObj2[playerNumber];
+
+
+testObj.hat = "happy ballcap"
+testObj2[12] = "yesletsgo";
+
+//Updating Object Properties and adding new properites
+const myDog1 = {
+  "name": "Coder",
+  "legs": 4,
+  "tails": 1,
+  "friends": ["freeCodeCamp Campers"]
+};
+
+myDog1.name = "Happy Coder"
+myDog1["legs"] = 4;
+myDog1.friends.push("we will rock you"); //adding new element to the array
+myDog1.bark = "woof";
+delete myDog1.tails; //deleting property in object
+
+//Testing objects for properties
+function checkObj(obj, checkProp)
+{
+  if (obj.hasOwnProperty(checkProp))
+  {
+    return obj[checkProp];
+  }
+  else
+  {
+    return "Not Found"
+  }
+}
+console.log(checkObj({ gift: "pony", pet: "kitten", bed: "sleigh" }, "gift"))
+
+//Manipulating Complex Objects
+const myMusic = [
+  {
+    "artist": "Billy Joel",
+    "title": "Piano Man",
+    "release_year": 1973,
+    "formats": [
+      "CD",
+      "8T",
+      "LP"
+    ],
+    "gold": true
+  },
+  {
+    "artist": "Daft Punk",
+    "title": "Homework",
+    "release_year": 1997,
+    "formats": ["CD", "Cassette", "LP"]
+  }
+];
+
+//Accessing Nested Objects
+const myStorage = {
+  "car": {
+    "inside": {
+      "glove box": "maps",
+      "passenger seat": "crumbs"
+    },
+    "outside": {
+      "trunk": "jack"
+    }
+  }
+};
+const gloveBoxContents = myStorage.car.inside["glove box"];
+
+// Accessing nested arrays
+const myPlants = [
+  {
+    type: "flowers",
+    list: [
+      "rose",
+      "tulip",
+      "dandelion"
+    ]
+  },
+  {
+    type: "trees",
+    list: [
+      "fir",
+      "pine",
+      "birch"
+    ]
+  }
+];
+const secondTree = myPlants[1].list[1];
+
+//iterate with while loop
+const myArray9 = [];
+let i = 5;
+while (i >= 0)
+{
+  myArray9.push(i);
+  i--;
+}
+
+// Iterate with for loops
+const myArray10 = [];
+for (let i = 1; i <= 5; i++)
+{
+  myArray10.push(i);
+}
+
+//for loops- odd numbers
+const myArray11 = [];
+for (let i = 1; i <= 9; i += 2)
+{
+  myArray11.push(i);
+}
+
+//nested loops
+function multiplyAll(arr)
+{
+  let product = 1;
+  for (let i = 0; i < arr.length; i++)
+  {
+    for (let j = 0; j < arr[i].length; j++)
+    {
+      product *= arr[i][j];
+    }
+  }
+  return product;
+}
+console.log(multiplyAll([[1, 2], [3, 4], [5, 6, 7]]));
+
+//do...while loop
+// Setup
+const myArray12 = [];
+let i2 = 10;
+do
+{
+  myArray.push(i);
+  i2++;
+} while (i2 < 11)
+
+console.log(myArray)
