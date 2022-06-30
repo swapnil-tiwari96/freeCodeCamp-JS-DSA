@@ -191,3 +191,118 @@ function processArg(num)
 processed = processArg(7);
 
 //Queue - stand in a line
+//pushing an item last and popping an item from the start
+function nextInLine(arr, item)
+{
+  arr.push(item);
+  let popItem = arr.shift();
+  return popItem; //returns the popped out element
+}
+const testArr = [1, 2, 3, 4, 5];
+console.log(nextInLine(testArr, 6));
+console.log(testArr);
+
+//Booleans - True or False
+
+//Condition Logic using if statements
+function trueOrFalse(wasThatTrue)
+{
+  if (wasThatTrue)
+  {
+    return "Yes, that was true"
+  }
+  return "No, that was false"
+}
+
+//Comparison with the equility operator
+//Called the comparison operators
+//If the values being compared are not of the same data type, the equility operator will perform a type conversion, and then evaluate the values. 
+function testEqual(val)
+{
+  if (val == 12)
+  {
+    return "Equal";
+  }
+  return "Not Equal";
+}
+testEqual(10);
+
+//Comparison with strictly equility operator
+// instead of ==, === is used.
+
+//Inequility Operator !=
+//Strict Inequility operator !==
+
+//Comparison with Greater than operator
+function testGreaterThan(val)
+{
+  if (val > 100)
+  {  // Change this line
+    return "Over 100";
+  }
+  if (val > 10)
+  {  // Change this line
+    return "Over 10";
+  }
+  return "10 or Under";
+}
+testGreaterThan(10);
+
+//Comparison with Greater than or Equal to >=
+//Comparison with Less than operator <
+//Comparison with Less than or equal to <=
+
+//Comparison with Logical AND Operator &&
+function testLogicalAnd(val)
+{
+  if (val <= 50 && val >= 25)
+  {
+    return "Yes";
+  }
+  return "No";
+}
+testLogicalAnd(10);
+
+//Comparison with Logical OR Operator ||
+function testLogicalOr(val)
+{
+  if (val < 10 || val > 20)
+  {
+    return "Outside";
+  } return "Inside";
+}
+testLogicalOr(15);
+
+// Else Statements
+function testElse(val)
+{
+  let result = "";
+  if (val > 5)
+  {
+    result = "Bigger than 5";
+  }
+  else
+  {
+    result = "5 or Smaller";
+  }
+  return result;
+}
+testElse(4);
+
+//Else if
+function testElseIf(val)
+{
+  if (val > 10)
+  {
+    return "Greater than 10";
+  }
+  else if (val < 5)
+  {
+    return "Smaller than 5";
+  }
+  else
+  {
+    return "Between 5 and 10";
+  }
+}
+testElseIf(7);
