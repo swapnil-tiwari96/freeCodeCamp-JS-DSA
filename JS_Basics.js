@@ -554,7 +554,6 @@ function multiplyAll(arr)
 console.log(multiplyAll([[1, 2], [3, 4], [5, 6, 7]]));
 
 //do...while loop
-// Setup
 const myArray12 = [];
 let i2 = 10;
 do
@@ -562,5 +561,63 @@ do
   myArray.push(i);
   i2++;
 } while (i2 < 11)
-
 console.log(myArray)
+
+//Recursion
+function sum(arr, n)
+{
+  if (n <= 0)
+  {
+    return 0
+  }
+  else
+  {
+    return arr[n - 1] + sum(arr, n - 1);
+  }
+}
+
+// Math.random- returns a number between 0(Inclusive) and 1(Exclusive)
+function randomFraction()
+{
+  return Math.random();
+}
+//0-n
+function randomWholeNum()
+{
+  return Math.floor(Math.random() * 10);
+}
+//min to max (my range)
+function randomRange(myMin, myMax)
+{
+  return Math.floor(Math.random() * (myMax - myMin + 1)) + myMin;
+}
+
+//parseInt - takes a string and converts into int
+function convertToInteger(str)
+{
+  return parseInt(str);
+}
+convertToInteger("56");
+//takes radix as second argument
+function convertToInteger(str)
+{
+  return parseInt(str, 2)
+}
+convertToInteger("10011");
+
+//Conditional Operator (Ternary)
+function checkEqual(a, b)
+{
+  return a === b ? "Equal" : "Not Equal";
+}
+checkEqual(1, 2);
+
+//Use Multiple Conditional (Ternary) Operator
+function checkSign(num)
+{
+  return (num > 0) ? "positive"
+    : (num == 0) ? "zero"
+      : "negative"
+}
+checkSign(10);
+
