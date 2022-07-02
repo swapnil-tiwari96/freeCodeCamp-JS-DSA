@@ -22,6 +22,6 @@ This contains the topics: <br>
 	d. Destructuring Assignment  <br>
 	e. Template Literal  <br>
 	f. Classes  <br>
-	g. Import and Export
-	h. Promises
+	g. Import and Export  <br>
+	h. Promises  <br>
 	
