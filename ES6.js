@@ -118,3 +118,120 @@ const getMousePosition = (x, y) => ({
 });
 //Instead of the above you can write the below:
 const getMousePositionRe = (x, y) => ({ x, y });
+
+//Write concise Declarative functions with ES6
+const bicycle = {
+    gear: 2,
+    setGear(newGear)
+    {
+        this.gear = newGear;
+    }
+};
+bicycle.setGear(3);
+console.log(bicycle.gear);
+
+//Use class syntax to define constructor function
+class Vegetable
+{
+    constructor(name)
+    {
+        this.name = name;
+    }
+}
+const carrot = new Vegetable('carrot');
+console.log(carrot.name);
+
+//Use getters and setters to control Access to an object
+class Thermostat
+{
+    constructor(fah)
+    {
+        this.fah = fah;
+    }
+    get temperature()
+    {
+        return 5 / 9 * (this.fah - 32);
+    }
+    set temperature(cel)
+    {
+        this.fah = cel * 9 / 5 + 32;
+    }
+}
+const thermos = new Thermostat(76); // Setting in Fahrenheit scale
+let temp = thermos.temperature; // 24.44 in Celsius
+thermos.temperature = 26;
+temp = thermos.temperature; // 26 in Celsius
+
+//Create a module script
+<html>
+    <body>
+        <script type="module" src="index.js"></script>
+    </body>
+</html>
+
+//Use export to share a code block
+const uppercaseString = (string) =>
+{
+    return string.toUpperCase();
+}
+const lowercaseString = (string) =>
+{
+    return string.toLowerCase()
+}
+export { uppercaseString, lowercaseString };
+
+//Reuse JS code using import
+import { uppercaseString, lowercaseString } from './string_functions.js';
+uppercaseString("hello");
+lowercaseString("WORLD!");
+
+// Use * to import everything from a file
+import * as stringFunctions from './string_functions.js';
+stringFunctions.uppercaseString("hello");
+stringFunctions.lowercaseString("WORLD!");
+
+// Create an Export fallback with export default
+export default function subtract(x, y)
+{
+    return x - y;
+}
+
+//Import a default Export
+import subtract from './math_functions.js'
+subtract(7, 4);
+
+// Create a JS promise - do something later usually asychronously. When the task completes, you either fullfil your promise or fail to do so. 
+const myPromise = new Promise((resolve, reject) =>
+{ })
+
+// Complete a promise with resolve and reject - A promise has three states pending, fullfilled and rejected.
+// The below example uses string for the argument for the function, but there can be anything. 
+const makeServerRequest = new Promise((resolve, reject) =>
+{
+    let responseFromServer;
+    if (responseFromServer)
+    {
+        resolve("We got the data");
+    } else
+    {
+        reject("Data not received");
+    }
+});
+
+/* Handle a fullfilled promise with then - promises are most useful when you have a process that takes an unknown amount of time in your code
+(sometimes asynchronous), often a server request.
+*/
+// using the above code
+makeServerRequest.then(result =>
+{
+    console.log(result);
+})
+
+/* Handle a Rejected Promise with catch - catch is the method used when the promise has been rejected. 
+It is executed immediately after a promise's reject method is called. 
+*/
+//using the above 2 set of code
+makeServerRequest.catch(error =>
+{
+    console.log(error)
+})
