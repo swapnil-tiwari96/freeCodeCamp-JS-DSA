@@ -2,8 +2,8 @@
 Contains all the practice code of JS DSA from freeCodeCamp. <br>
 
 This contains the topics: 
-1. <b>JS Basics:</b>
-  - Assignment Operation  
+1. **JS Basics:**
+	- Assignment Operation  
   - Arithmetic operation 
   - Compound Assignment 
   - Strings 
@@ -15,10 +15,10 @@ This contains the topics:
   - Objects 
   - Recursion 
   - Some small DSA problems 
-2. <b>ES6 </b>
-	- let, var & const  
-	- Arrow Functions 
-	- Spread Operator  
+2. **ES6:**
+	- let, var & const
+	- Arrow Functions
+	- Spread Operator
 	- Destructuring Assignment  
 	- Template Literal  
 	- Classes
