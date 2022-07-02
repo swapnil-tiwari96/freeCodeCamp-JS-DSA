@@ -3,7 +3,7 @@ Contains all the practice code of JS DSA from freeCodeCamp.
 
 This contains the topics:
 1. JS Basics:
-  a. Assignment Operation
+  a. Assignment Operation \n
   b. Arithmetic operation
   c. Compound Assignment
   d. Strings
