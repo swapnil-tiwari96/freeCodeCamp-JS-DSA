@@ -15,13 +15,13 @@ This contains the topics:
   - Objects 
   - Recursion 
   - Some small DSA problems 
-2. <b>ES6 <b>
-	a. let, var & const  
-	b. Arrow Functions 
-	c. Spread Operator  
-	d. Destructuring Assignment  
-	e. Template Literal  
-	f. Classes
-	g. Import and Export 
-	h. Promises
+2. <b>ES6 </b>
+	- let, var & const  
+	- Arrow Functions 
+	- Spread Operator  
+	- Destructuring Assignment  
+	- Template Literal  
+	- Classes
+	- Import and Export 
+	- Promises
 	
