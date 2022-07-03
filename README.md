@@ -24,4 +24,18 @@ This contains the topics:
 	- Classes
 	- Import and Export 
 	- Promises
-	
+3. **Regular Expression**
+	- // and .test()
+	- OR |
+	- Ignore Case -i
+	- .match()
+	- -g flag
+	- Wildcard Period .
+	- Character Class []
+	- Negated Set ^
+	- $ ? + * 
+	- \w \W
+	- \d \D
+	- \s \S
+	- {} ()
+	- Positive and Negative Lookaheads
