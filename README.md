@@ -14,7 +14,8 @@ This contains the topics:
 	- Conditional statements 
 	- Objects 
 	- Recursion 
-	- Some small DSA problems 
+	- Some small DSA problems
+	
 2. **ES6:**
 	- let, var & const
 	- Arrow Functions
@@ -24,6 +25,7 @@ This contains the topics:
 	- Classes
 	- Import and Export 
 	- Promises
+	
 3. **Regular Expression**
 	- // and .test()
 	- OR |
@@ -39,3 +41,5 @@ This contains the topics:
 	- \s \S
 	- {} ()
 	- Positive and Negative Lookaheads
+
+4. Debugging
