@@ -1,6 +1,3 @@
-// Match anything with Wildcard Period ().
-// Will return true or false
-let exampleStr = "Let's have fun with regular run sun expressions!";
-let unRegex = /un/i; // use of . and i together as well
-console.log(unRegex.test(exampleStr)); // used test here so will result into true or false
-console.log(exampleStr.match(unRegex))
+const arr = [2, 4, 5, 1, 7, 5, 2, 1];
+console.log(arr.splice(3, 1))
+// console.log(arr.splice(1, 3).reduce((x, y) => x + y)); //if i had to add the elements as well
