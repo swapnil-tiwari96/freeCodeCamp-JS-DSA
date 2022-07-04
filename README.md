@@ -42,4 +42,20 @@ This contains the topics:
 	- {} ()
 	- Positive and Negative Lookaheads
 
-4. Debugging
+4. **Debugging**
+5. **Basic Data Structure**
+	- arrays and .length()
+	- access array content through [] and .
+	- push() and unshift()
+	- pop() and shift()
+	- splice (remove and add items)
+	- slice
+	- spread operator (...)
+	- indexOf()
+	- key-value pair
+	- access and delete property
+	- hasOwnProperty()
+	- in operator
+	- for...in
+	- nested objects and arrays
+
