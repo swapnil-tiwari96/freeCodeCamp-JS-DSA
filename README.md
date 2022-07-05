@@ -58,4 +58,18 @@ This contains the topics:
 	- in operator
 	- for...in
 	- nested objects and arrays
+6. **Basic Algorithm Scripting**
+	- Convert Celcius to Fahrenhiet
+	- Reverse a string
+	- Factoralize a number
+	- Find the longest word in a string
+	- Return largest number in an array
+	- Confirm the ending
+	- Repeat a string
+	- Truncate a string
+	- Finders Keepers
+	- Boo Who
+	- Falsy Values
+	- Where do I belong
+	- Chunky Monkey
 
