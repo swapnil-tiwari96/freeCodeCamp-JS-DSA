@@ -73,3 +73,10 @@ This contains the topics:
 	- Where do I belong
 	- Chunky Monkey
 
+7. **OOP**
+	- Objects
+	- Prototype
+	- Classes
+	- Inheritence
+
+8. Functional Programming
