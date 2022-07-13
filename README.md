@@ -79,4 +79,4 @@ This contains the topics:
 	- Classes
 	- Inheritence
 
-8. Functional Programming
+8. **Functional Programming**
