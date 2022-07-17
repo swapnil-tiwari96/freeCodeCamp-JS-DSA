@@ -84,4 +84,85 @@ console.log(bookList);
 /* Use the map Method to Extract Data from an Array - The map method iterates over each item in an array and returns a new array 
 containing the results of calling the callback function on each element. It does this without mutating the original array.
 */
+// Map is a pure function and it solely depends on it's input. 
+const ratings = watchList.map(({ Title: title, imdbRating: rating }) => ({ title, rating }));
 
+// Implementing map() using forEach()
+// the global Array
+var s = [23, 65, 98, 5];
+Array.prototype.myMap = function (callback)
+{
+    var newArray = [];
+    this.forEach(a => newArray.push(callback(a)));
+    return newArray;
+};
+var new_s = s.myMap(function (item)
+{
+    return item * 2;
+});
+
+// .filter()
+const filteredList = watchList
+    .filter(({ imdbRating }) => imdbRating >= 8.0)
+    .map(({ Title: title, imdbRating: rating }) => ({ title, rating }));
+
+// Implementing .filter using forEach()
+let s = [23, 65, 98, 5];
+Array.prototype.myFilter = function (callback)
+{
+    // Only change code below this line
+    let newArray = [];
+    this.forEach(function (x) 
+    {
+        if (callback(x) == true)
+        {
+            newArray.push(x);
+        }
+    });
+    // Only change code above this line
+    return newArray;
+};
+
+let new_s = s.myFilter(function (item)
+{
+    return item % 2 === 1;
+});
+
+// In functional programming, it's better to use things which don't mutate the array.
+// Slice doesn't mutate the array. But splice does.
+// Concat doesn't mutate the array. But push does.
+
+// Use reduce method to analyze data
+function getRating(watchList)
+{
+    const averageRating = watchList
+        // Use filter to find films directed by Christopher Nolan
+        .filter(film => film.Director === "Christopher Nolan")
+        // Use map to convert their ratings from strings to numbers
+        .map(film => Number(film.imdbRating))
+        // Use reduce to add together their ratings
+        .reduce((sumOfRatings, rating) => sumOfRatings + rating) /
+        // Divide by the number of Nolan films to get the average rating
+        watchList.filter(film => film.Director === "Christopher Nolan").length;
+    return averageRating;
+}
+
+// sort an alphabetically using the sort method - it sorts the elements of an array according to the callback function
+function ascendingOrder(arr)
+{
+    return arr.sort(function (a, b)
+    {
+        return a - b;
+    });
+}
+ascendingOrder([1, 5, 2, 3, 4]);
+// This would return the value [1, 2, 3, 4, 5]
+
+function reverseAlpha(arr)
+{
+    return arr.sort(function (a, b)
+    {
+        return a === b ? 0 : a < b ? 1 : -1;
+    });
+}
+reverseAlpha(['l', 'h', 'z', 'b', 's']);
