@@ -166,3 +166,61 @@ function reverseAlpha(arr)
     });
 }
 reverseAlpha(['l', 'h', 'z', 'b', 's']);
+// This would return the value ['z', 's', 'l', 'h', 'b'].
+
+// return a sorted array without changing the original array
+const globalArray = [5, 6, 3, 2, 9];
+function nonMutatingSort(arr)
+{
+    return [].concat(arr).sort(function (a, b)
+    {
+        return a - b;
+    });
+}
+console.log(nonMutatingSort(globalArray));
+
+// Split a String into an Array Using the split Method
+function splitify(str)
+{
+    return str.split(/\W/)
+}
+splitify("Hello World,I-am code");
+
+// Combine an Array into a String Using the join Method
+function sentensify(str)
+{
+    return str.split(/\W/).join(" ");
+}
+console.log(sentensify("May-the-force-be-with-you"));
+
+// Apply Functional Programming to Convert Strings to URL Slugs
+function urlSlug(title)
+{
+    return title
+        .toLowerCase()
+        .trim()
+        .split(/\s+/)
+        .join("-");
+}
+urlSlug("A Mind Needs Books Like A Sword Needs A Whetstone");
+
+// Use the every Method to Check that Every Element in an Array Meets a Criteria
+function checkPositive(arr)
+{
+    return arr.every(x => x > 0);
+}
+checkPositive([1, 2, 3, -4, 5]); //will return false 
+
+// Use the some Method to Check that Any Elements in an Array Meet a Criteria
+function checkPositive(arr)
+{
+    return arr.some(x => x > 0)
+}
+checkPositive([1, 2, 3, -4, 5]);
+
+// Introduction to Currying and Partial Application - need to learn this
+function add(x)
+{
+    return y => z => x + y + z;
+}
+add(10)(20)(30);
