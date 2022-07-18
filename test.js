@@ -1,6 +1,7 @@
-function urlSlug(title)
+function diffArray(arr1, arr2)
 {
-    return title.toLowerCase().trim().split(/\s+/).join("-");
+    return [...arr1.filter(x => !arr2.includes(x)),
+    ...arr2.filter(x => !arr1.includes(x))]
 }
-console.log(urlSlug("    A Mind Needs Books Like A Sword Needs A Whetstone"));
 
+console.log(diffArray([1, 2, 3, 5], [1, 2, 3, 4, 5, 8, 9]));

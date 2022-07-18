@@ -89,3 +89,10 @@ This contains the topics:
 	- reduce()
 	- concat()
 	- sort()
+
+9. **Intermediate Algorithm Scripting**
+	- Sum All numbers in range
+	- Diff two arrays
+	- Seek and destroy
+	- Spinal Tap Case
+	- Pig Latin
