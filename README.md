@@ -80,3 +80,12 @@ This contains the topics:
 	- Inheritence
 
 8. **Functional Programming**
+	- Isolated, Pure and functions with side effects
+	- Higher Order Funcions
+	- Best Practices to write a function
+	- forEach()
+	- map()
+	- filter()
+	- reduce()
+	- concat()
+	- sort()
