@@ -1,4 +1,6 @@
-arr = [1, 2, 3, 4, 5, 6]
-console.log(arr.slice(2))
-console.log(arr.slice(0, 2))
+function urlSlug(title)
+{
+    return title.toLowerCase().trim().split(/\s+/).join("-");
+}
+console.log(urlSlug("    A Mind Needs Books Like A Sword Needs A Whetstone"));
 
