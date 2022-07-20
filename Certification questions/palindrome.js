@@ -1,3 +1,12 @@
+// if only for strings with no gaps
+function palindrome(str)
+{
+    let rstr = str.split("").reverse().join("");
+    return (str === rstr);
+}
+console.log(palindrome("eye"));
+
+//using stack
 function palindrome(str)
 {
     let letters = [];
@@ -14,4 +23,4 @@ function palindrome(str)
     return (str === rword);
 }
 
-console.log(palindrome("eyesd"));
+console.log(palindrome("eye"));

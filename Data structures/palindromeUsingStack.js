@@ -7,6 +7,7 @@ function palindrome(str)
     {
         letters.push(str[i]);
     }
+    // pop off the stack in reverse order
     for (let i = 0; i < str.length; i++)
     {
         rword += letters.pop();
@@ -14,4 +15,4 @@ function palindrome(str)
     return (str === rword);
 }
 
-console.log(palindrome("eyesd"));
+console.log(palindrome("eye"));
